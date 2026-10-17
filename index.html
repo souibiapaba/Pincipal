@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sou Ibiapaba</title>
+    <link rel="stylesheet" href="StyleIndex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="navbar container">
+            <div class="logo">
+                <div class="logo-img"> <a href=""><img src="img/icone-logo.png" alt="logo"></a></div>
+            
+            <span>Sou Ibiapaba</span>
+        </div>
+
+        </div>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), 
+                url('img/ImgPrincipal2.jpg') no-repeat center center/cover;">
+        <div class="hero-content container">
+            <h1>Conheça Ibiapaba</h1>
+            <p>Cachoeiras, mirantes e Trilhas</p>
+            <a href="#cards" class="btn-cta">Escolher Destino</a>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- CARROSSEL DE ATRATIVOS -->
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/SitioDoBosco.jpg" alt="Sitio do Bosco"></a><span>Sitio do Bosco</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/ParedaoJaneiro.jpg" alt="Paredões do Janeiro"></a><span>Paredões do Janeiro</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/Bondinho.jpg" alt="Teleferico"></a><span>Parque Ubajara</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/CachoeiraFrade.jpg" alt="Cachoeira Frade"></a><span>Cachoeira do Frade</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/PraiaDoJet.jpg" alt="Praia do Jet"></a><span>Praia do Jet</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/IgrejaDoCeu.jpg" alt="Igreja do Céu"></a><span>Igreja do Céu</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/ipParkCarrossel.jpg" alt="Ipê Park"></a><span>Ipê Park</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/LapaVicosa.jpg" alt="Lapa de Viçosa"></a><span>Lapa de Viçosa</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/MiranteDaSerra.jpg" alt="Mirante da Serra"></a><span>Mirante da Serra</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/LapaTiangua2.jpg" alt="Lapa Ecoturismo"></a><span>Lapa Ecoturismo</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/Alto-Ibia.jpeg" alt="Alto Ibia Parque"></a><span>Ibiá Parque</span></div>
+            <div class="carousel-item"><a href=""><img src="img/Carrossel/Pedra-do-Espia.jpg" alt="Pedra do Espia"></a><span>Mirante do Espia</span></div>
+        </div>
+    </div>
+
+    <main id="cards" class="page-wrapper">
+
+
+    <section class="points-section container" style="padding: 30px;"></section>
+            <!-- TÍTULO DA SEÇÃO DE CARDS -->
+        <div class="section-title-container">
+
+
+        
+            <h2 class="section-title">Explore os Melhores Destinos</h2>
+            
+            <p class="section-subtitle">Roteiros, trilhas e paisagens marcantes para você vivenciar o melhor da Ibiapaba</p>
+        </div>
+
+        </section>
+    <!-- SEÇÃO DE PONTOS TURÍSTICOS (CARDS) -->
+    
+        <div class="cards-container">
+            
+            
+            <!-- Card 1 -->
+            <div class="card" data-id="1">
+                <div class="card-image-container">
+                    <a href="Paginas/Cachoeira-frade.html"><img src="img/CachoeiraFrade.jpg" alt="Cachoeira do Frade"></a>
+                    <div class="badge-distance"><i class="ph ph-map-pin"></i> 23 KM</div>
+                    
+                    <div class="badge-rating"><i class="ph-fill ph-star"></i> 4.5</div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Cachoeira do Frade</h2>
+                    <p class="card-location"><i class="ph ph-map-pin"></i>Ubajara-Ce</p>
+                    <p class="card-description">
+                        A Cachoeira do Frade é considerada uma das quedas d'água mais bonitas e impressionantes da Serra da Ibiapaba, 
+                        localizada no município de Ubajara, Ceará (bem na divisa com Tianguá). Ela se destaca por sua imponente queda 
+                        de mais de 15 metros de altura e por ser cercada pelo bioma de Carrasco.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">#cachoeira</span>
+                        <span class="tag">#trilha</span>
+                        <span class="tag">#natureza</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-likes"><i class="ph ph-heart"></i> <span class="like-count">Favorito 💚</span></button>
+                        <button class="btn-share" aria-label="Compartilhar"><i class="ph ph-paper-plane-tilt" style="font-size: 1.1rem;"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Card 2 -->
+            <div class="card" data-id="2">
+                <div class="card-image-container">
+                    <a href="Paginas/Parque-Ubajara.html"><img src="img/GrutaUbajara.png" alt="Gruta de Ubajara"></a>
+                    <div class="badge-distance"><i class="ph ph-map-pin"></i> 3.5 KM</div>
+                    
+                    <div class="badge-rating"><i class="ph-fill ph-star"></i> 4.8</div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Gruta de Ubajara</h2>
+                    <p class="card-location"><i class="ph ph-map-pin"></i> Ubajara-Ce</p>
+                    <p class="card-description">
+                        A Gruta de Ubajara é a joia principal e o atrativo mais famoso do Parque Nacional de Ubajara, 
+                        localizado na deslumbrante Serra da Ibiapaba, no Ceará. Sendo a maior caverna calcária do estado, 
+                        ela possui mais de 1.120 metros de extensão mapeados, dos quais cerca de 450 a 500 metros são abertos 
+                        à visitação turística. No seu interior, galerias e salões subterrâneos revelam ricas formações de estalactites 
+                        e estalagmites esculpidas pela água ao longo de milhões de anos.
+                    </p>
+                    <div class="card-tags">
+                        
+                        <span class="tag">#trilhas</span>
+                        <span class="tag">#cachoeiras</span>
+                        <span class="tag">#gruta</span>
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-likes"><i class="ph ph-heart"></i> <span class="like-count">Favorito 💚</span></button>
+                        <button class="btn-share" aria-label="Compartilhar"><i class="ph ph-paper-plane-tilt" style="font-size: 1.1rem;"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" data-id="3">
+                <div class="card-image-container">
+                    <a href="Paginas/Igreja-Do_Ceu.html"><img src="img/IgrejaDoCeu.jpg" alt="Igrja do Céu"></a>
+                    <div class="badge-distance"><i class="ph ph-map-pin"></i> 1.1 KM</div>
+                    
+                    <div class="badge-rating"><i class="ph-fill ph-star"></i> 4.9</div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Igreja do Céu</h2>
+                    <p class="card-location"><i class="ph ph-map-pin"></i> Viçosa do Ceará-Ce</p>
+                    <p class="card-description">
+                        A Igreja do Céu (oficialmente Igreja de Nossa Senhora das Vitórias) é o principal 
+                        cartão-postal e ponto turístico de Viçosa do Ceará, localizada no topo do ponto mais 
+                        alto do perímetro urbano da cidade, a cerca de 900 metros de altitude na Serra da Ibiapaba. 
+                        O complexo destaca-se por sua belíssima arquitetura, pela imponente estátua do Cristo Redentor 
+                        esculpida por Raimundo Anito e por oferecer uma vista panorâmica inesquecível de toda a região e 
+                        do pôr do sol.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">#paisagem</span>
+                        <span class="tag">#cultura</span>
+                        <span class="tag">#Fé</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-likes"><i class="ph ph-heart"></i> <span class="like-count">Favorito 💚</span></button>
+                        <button class="btn-share" aria-label="Compartilhar"><i class="ph ph-paper-plane-tilt" style="font-size: 1.1rem;"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+             
+            <div class="card" data-id="4">
+                <div class="card-image-container">
+                    <a href="Paginas/Sitio-Do_Bosco.html"><img src="img/SitioDoBosco/sitio-do-bosco-piscina.jpg" alt="Sítio do Bosco"></a>
+                    <div class="badge-distance"><i class="ph ph-map-pin"></i> 10 KM</div>
+                    
+                    <div class="badge-rating"><i class="ph-fill ph-star"></i> 4.7</div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Sítio do Bosco</h2>
+                    <p class="card-location"><i class="ph ph-map-pin"></i> Tianguá-Ce</p>
+                    <p class="card-description">
+                        O Sítio do Bosco Park é o principal complexo de ecoturismo e aventura de 
+                        Tianguá, Ceará, localizado a cerca de 900 metros de altitude na Chapada da 
+                        Ibiapaba. O local é amplamente conhecido por sua pista de voo livre, piscina 
+                        de água natural, área de camping estruturada e por ostentar um clima de montanha 
+                        muito agradável, que atrai visitantes de todo o Nordeste.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">#natureza</span>
+                        <span class="tag">#mirante</span>
+                        <br><span class="tag">#hospedagem</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-likes"><i class="ph ph-heart"></i> <span class="like-count">Favorito 💚</span></button>
+                        <button class="btn-share" aria-label="Compartilhar"><i class="ph ph-paper-plane-tilt" style="font-size: 1.1rem;"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 5  -->
+            <div class="card" data-id="5">
+                <div class="card-image-container">
+                    <a href="Paginas/ParedoesJaneiro.html"><img src="img/ParedaoJaneiro.jpg" alt="Paredões do Janeiro"></a>
+                    <div class="badge-distance"><i class="ph ph-map-pin"></i> 7.4 KM</div>
+                    
+                    <div class="badge-rating"><i class="ph-fill ph-star"></i> 4.8</div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Paredões do Janeiro</h2>
+                    <p class="card-location"><i class="ph ph-map-pin"></i> Tianguá-Ce</p>
+                    <p class="card-description">
+                        O Geossítio Paredões de Janeiro é um dos destinos mais impressionantes 
+                        e selvagens de Tianguá, Ceará, localizado no Sítio Acarape (Zona Rural). 
+                        Geograficamente, a área faz parte do território do Parque Nacional de Ubajara, 
+                        protegendo uma rica área de transição ecológica onde os imensos paredões rochosos 
+                        da Serra da Ibiapaba encontram a Depressão Sertaneja.
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">#Cachoeira</span>
+                        <span class="tag">#Trilha</span>
+                        <span class="tag">#Mirante</span>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-likes"><i class="ph ph-heart"></i> <span class="like-count">Favorito 💚</span></button>
+                        <button class="btn-share" aria-label="Compartilhar"><i class="ph ph-paper-plane-tilt" style="font-size: 1.1rem;"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-brand">
+
+                <div class="logo"><div class="logo-img"> <a href=""><img src="img/icone-logo.png" alt="logo"></div></a>
+            
+            <span>Sou Ibiapaba</span></div>
+            </div>
+            <nav class="footer-nav">
+                <a href="Paginas/Roteiros.html">Roteiros</a>
+                <a href="">Hospedagens</a>
+                <a href="">Gastronomia</a>
+                <a href="">Contato</a>
+            </nav>
+            <div class="footer-contact">
+                <span>(85) 99999-8888</span>
+                <span>•</span>
+                <span>souibiapaba@gmail.com</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sou Ibiapaba. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT UNIFICADO -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // --- 1. GERENCIAMENTO DE CURTIDOS E FAVORITOS ---
+        let curtidos = JSON.parse(localStorage.getItem('curtidos')) || [];
+        let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+
+        document.querySelectorAll('.card').forEach(card => {
+            const id = card.dataset.id;
+            const btnLike = card.querySelector('.btn-likes');
+            const btnFav = card.querySelector('.btn-bookmark');
+            const btnShare = card.querySelector('.btn-share');
+            const titulo = card.querySelector('.card-title')?.textContent.trim() || "Ponto Turístico";
+
+            if (!id) return;
+
+            // Define estado inicial de curtidas/salvos
+            if (curtidos.includes(id)) {
+                btnLike?.classList.add('ativo');
+            }
+            if (favoritos.includes(id)) {
+                btnFav?.classList.add('ativo');
+            }
+
+            // Evento de Curtir
+            btnLike?.addEventListener('click', () => {
+                if (curtidos.includes(id)) {
+                    curtidos = curtidos.filter(c => c !== id);
+                    btnLike.classList.remove('ativo');
+                } else {
+                    curtidos.push(id);
+                    btnLike.classList.add('ativo');
+                }
+                localStorage.setItem('curtidos', JSON.stringify(curtidos));
+            });
+
+            // Evento de Favoritar/Salvar
+            btnFav?.addEventListener('click', () => {
+                if (favoritos.includes(id)) {
+                    favoritos = favoritos.filter(f => f !== id);
+                    btnFav.classList.remove('ativo');
+                } else {
+                    favoritos.push(id);
+                    btnFav.classList.add('ativo');
+                }
+                localStorage.setItem('favoritos', JSON.stringify(favoritos));
+            });
+
+            // --- FUNÇÃO DE COMPARTILHAR ---
+            btnShare?.addEventListener('click', async () => {
+                const shareData = {
+                    title: `${titulo} - Serra Viva`,
+                    text: `Confira este atrativo na Serra da Ibiapaba: ${titulo}`,
+                    url: window.location.href.split('#')[0] + `#card-${id}`
+                };
+
+                // Tenta compartilhar via Web Share API (celulares/navegadores modernos)
+                if (navigator.share) {
+                    try {
+                        await navigator.share(shareData);
+                    } catch (err) {
+                        // O usuário simplesmente fechou a janela de compartilhamento
+                    }
+                } else {
+                    // Fallback: Copia o link para a área de transferência se o navegador não suportar Web Share
+                    try {
+                        await navigator.clipboard.writeText(shareData.url);
+                        alert(`Link do ${titulo} copiado para a área de transferência!`);
+                    } catch (err) {
+                        alert(`Link para compartilhar: ${shareData.url}`);
+                    }
+                }
+            });
+        });
+
+        // --- 2. CARROSSEL DE ATRATIVOS ---
+        const carousel = document.getElementById('carousel');
+        if (!carousel) return;
+
+        let isDragging = false;
+        let startX, scrollStart;
+        let autoPlayTimer = null;
+        let currentIndex = 0;
+
+        carousel.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX;
+            scrollStart = carousel.scrollLeft;
+            stopAutoPlay();
+        });
+
+        carousel.addEventListener('mouseleave', () => { isDragging = false; startAutoPlay(); });
+        carousel.addEventListener('mouseup', () => { isDragging = false; startAutoPlay(); });
+
+        carousel.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.pageX;
+            const walk = x - startX;
+            carousel.scrollLeft = scrollStart - walk;
+        });
+
+        let touchStartX, touchScrollStart;
+
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].pageX;
+            touchScrollStart = carousel.scrollLeft;
+            stopAutoPlay();
+        });
+
+        carousel.addEventListener('touchend', () => { startAutoPlay(); });
+
+        carousel.addEventListener('touchmove', (e) => {
+            const x = e.touches[0].pageX;
+            const walk = x - touchStartX;
+            carousel.scrollLeft = touchScrollStart - walk;
+        });
+
+        function getItemWidth() {
+            const firstItem = carousel.querySelector('.carousel-item');
+            if (!firstItem) return 0;
+            const gap = parseFloat(getComputedStyle(carousel).gap) || 16;
+            return firstItem.offsetWidth + gap;
+        }
+
+        function autoPlay() {
+            const itemWidth = getItemWidth();
+            const totalItems = carousel.children.length;
+            if (itemWidth === 0 || totalItems === 0) return;
+
+            currentIndex = (currentIndex + 1) % totalItems;
+
+            carousel.scrollTo({
+                left: itemWidth * currentIndex,
+                behavior: 'smooth'
+            });
+        }
+
+        function startAutoPlay() {
+            if (!autoPlayTimer) {
+                autoPlayTimer = setInterval(autoPlay, 3500);
+            }
+        }
+
+        function stopAutoPlay() {
+            if (autoPlayTimer) {
+                clearInterval(autoPlayTimer);
+                autoPlayTimer = null;
+            }
+        }
+
+        startAutoPlay();
+    });
+    </script>
+</body>
+</html>
