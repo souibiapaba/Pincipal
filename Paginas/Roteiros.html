@@ -148,7 +148,7 @@
             margin: 0 auto;
             font-size: 1.08rem;
             line-height: 1.85;
-            color: #374151;
+            color: #194c9e;
         }
 
         .content-block h2 {
@@ -182,13 +182,10 @@
             font-style: italic;
         }
 
-        /* TABELA DE ROTEIRO */
+        /* TABELA DE ROTEIRO RESPONSIVA OTIMIZADA */
         .itinerary-table-wrapper {
-            overflow-x: auto;
             margin: 30px 0;
-            border: 1px solid #fbcfe8;
             border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
         }
 
         .itinerary-table {
@@ -197,6 +194,10 @@
             text-align: left;
             font-size: 0.98rem;
             background: #ffffff;
+            border: 1px solid #fbcfe8;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
         }
 
         .itinerary-table th {
@@ -226,6 +227,62 @@
             font-weight: 700;
             color: #be185d;
             white-space: nowrap;
+        }
+
+        /* ADAPTAÇÃO MOBILE DA TABELA (TRANSFORMAÇÃO EM CARDS) */
+        @media (max-width: 768px) {
+            .itinerary-table, 
+            .itinerary-table tbody, 
+            .itinerary-table tr, 
+            .itinerary-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .itinerary-table thead {
+                display: none; /* Oculta o cabeçalho tradicional no celular */
+            }
+
+            .itinerary-table tr {
+                background: #ffffff !important;
+                border: 1px solid #fbcfe8;
+                border-radius: 12px;
+                margin-bottom: 16px;
+                box-shadow: 0 4px 10px rgba(131, 24, 67, 0.04);
+                overflow: hidden;
+            }
+
+            .itinerary-table td {
+                padding: 12px 16px;
+                border-bottom: 1px solid #fce7f3;
+                text-align: right;
+                position: relative;
+            }
+
+            .itinerary-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 16px;
+                font-weight: 700;
+                color: #831843;
+                text-align: left;
+            }
+
+            .itinerary-table td:last-child {
+                border-bottom: none;
+            }
+
+            .itinerary-day-tag {
+                background-color: #fdf2f8;
+                text-align: center !important;
+                font-size: 1.05rem;
+                padding: 14px;
+                border-bottom: 2px solid #fbcfe8 !important;
+            }
+            
+            .itinerary-day-tag::before {
+                display: none; /* Esconde o rótulo padrão na linha de dia */
+            }
         }
 
         /* GRID DE DICAS EM 3 COLUNAS */
@@ -350,24 +407,10 @@
 
     <header class="header">
         <div class="navbar container">
-            <div class="logo"><div class="logo-img"> <a href=""><img src="logos/icone-logo.png" alt="logo"></div></a>
+            <div class="logo"><div class="logo-img"> <a href=""><img src="../img/icone-logo.png" alt="logo"></div></a>
             
             <span>Sou Ibiapaba</span></div>
-            <!-- 
-            <nav class="nav-menu">
-                <a href="">Home</a>
-                <a href="">Atrativos</a>
-                <a href="">Roteiros</a>
-                <a href="">Galeria</a>
-                <a href="">Contato</a>
-            </nav>
-            botões de entrar e cadastrar! 
-            <div class="nav-buttons">
-                <a href="" class="btn-text">Entrar</a>
-                <a href="" class="btn-primary-small">Cadastrar</a>
-            </div>
-            -->
-
+            
         </div>
     </header>
 
@@ -388,17 +431,17 @@
     <!-- CARROSSEL DE ATRATIVOS -->
     <div class="carousel-container">
         <div class="carousel" id="carousel">
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
-            <div class="carousel-item"><img src="../img/" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/Bondinho.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/CachoeiraFrade2.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/ipParkCarrossel.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/LapaVicosa.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/MiranteDaSerra.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/SitioDoBosco.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/LapaVicosa.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/IgrejaDoCeu.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/PraiaDoJet.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/LapaTiangua2.jpg" alt=""><span>Titulo</span></div>
+            <div class="carousel-item"><img src="../img/Carrossel/SitioDoBosco.jpg" alt=""><span>Titulo</span></div>
         </div>
     </div>
 
@@ -466,7 +509,7 @@
                 Acompanhe o cronograma planejado para otimizar seus dias e garantir que você conheça os principais cartões-postais da região:
             </p>
 
-            <!-- Tabela de Itinerário Integrada -->
+            <!-- Tabela de Itinerário Responsiva -->
             <div class="itinerary-table-wrapper">
                 <table class="itinerary-table">
                     <thead>
@@ -479,46 +522,46 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="itinerary-day-tag">Dia 1: Ubajara</td>
-                            <td>Manhã</td>
-                            <td><strong>Parque Nacional de Ubajara</strong></td>
-                            <td>Teleférico, trilhas ecológicas e visita guiada à Gruta de Ubajara. Usar calçado fechado.</td>
+                            <td class="itinerary-day-tag" data-label="Dia">Dia 1: Ubajara</td>
+                            <td data-label="Período">Manhã</td>
+                            <td data-label="Atração"><strong>Parque Nacional de Ubajara</strong></td>
+                            <td data-label="Destaques">Teleférico, trilhas ecológicas e visita guiada à Gruta de Ubajara. Usar calçado fechado.</td>
                         </tr>
                         <tr>
-                            <td class="itinerary-day-tag">Dia 1: Ubajara</td>
-                            <td>Tarde</td>
-                            <td><strong>Cachoeira do Frade</strong></td>
-                            <td>Banho em águas cristalinas e piscinas naturais rodeadas pela vegetação nativa.</td>
+                            <td class="itinerary-day-tag" data-label="Dia">Dia 1: Ubajara</td>
+                            <td data-label="Período">Tarde</td>
+                            <td data-label="Atração"><strong>Cachoeira do Frade</strong></td>
+                            <td data-label="Destaques">Banho em águas cristalinas e piscinas naturais rodeadas pela vegetação nativa.</td>
                         </tr>
                         <tr>
-                            <td class="itinerary-day-tag">Dia 1: Ubajara</td>
-                            <td>Noite</td>
-                            <td><strong>Centro de Ubajara</strong></td>
-                            <td>Jantar regional em restaurantes locais aproveitando o clima frio da noite.</td>
+                            <td class="itinerary-day-tag" data-label="Dia">Dia 1: Ubajara</td>
+                            <td data-label="Período">Noite</td>
+                            <td data-label="Atração"><strong>Centro de Ubajara</strong></td>
+                            <td data-label="Destaques">Jantar regional em restaurantes locais aproveitando o clima frio da noite.</td>
                         </tr>
                         <tr>
-                            <td class="itinerary-day-tag">Dia 2: Tianguá</td>
-                            <td>Manhã / Tarde</td>
-                            <td><strong>Sítio do Bosco</strong></td>
-                            <td>Day use com piscina de pedra natural, ponto de voo livre e trilhas contemplativas.</td>
+                            <td class="itinerary-day-tag" data-label="Dia">Dia 2: Tianguá</td>
+                            <td data-label="Período">Manhã / Tarde</td>
+                            <td data-label="Atração"><strong>Sítio do Bosco</strong></td>
+                            <td data-label="Destaques">Day use com piscina de pedra natural, ponto de voo livre e trilhas contemplativas.</td>
                         </tr>
                         <tr>
-                            <td class="itinerary-day-tag">Dia 2: Tianguá</td>
-                            <td>Fim de Tarde</td>
-                            <td><strong>Mirante da Serra</strong></td>
-                            <td>Contemplação do pôr do sol no vale com parada para café artesanal quente.</td>
+                            <td class="itinerary-day-tag" data-label="Dia">Dia 2: Tianguá</td>
+                            <td data-label="Período">Fim de Tarde</td>
+                            <td data-label="Atração"><strong>Mirante da Serra</strong></td>
+                            <td data-label="Destaques">Contemplação do pôr do sol no vale com parada para café artesanal quente.</td>
                         </tr>
                         <tr>
-                            <td class="itinerary-day-tag">Dia 3: Viçosa</td>
-                            <td>Manhã</td>
-                            <td><strong>Centro Histórico de Viçosa</strong></td>
-                            <td>Caminhada pelas ruas tombadas, Igreja Matriz e degustação de cachaças artesanais.</td>
+                            <td class="itinerary-day-tag" data-label="Dia">Dia 3: Viçosa</td>
+                            <td data-label="Período">Manhã</td>
+                            <td data-label="Atração"><strong>Centro Histórico de Viçosa</strong></td>
+                            <td data-label="Destaques">Caminhada pelas ruas tombadas, Igreja Matriz e degustação de cachaças artesanais.</td>
                         </tr>
                         <tr>
-                            <td class="itinerary-day-tag">Dia 3: Viçosa</td>
-                            <td>Tarde / Noite</td>
-                            <td><strong>Igreja do Céu</strong></td>
-                            <td>Subida pela Escadaria da Via Sacra, panorama 360° da serra e jantar no polo gastronômico.</td>
+                            <td class="itinerary-day-tag" data-label="Dia">Dia 3: Viçosa</td>
+                            <td data-label="Período">Tarde / Noite</td>
+                            <td data-label="Atração"><strong>Igreja do Céu</strong></td>
+                            <td data-label="Destaques">Subida pela Escadaria da Via Sacra, panorama 360° da serra e jantar no polo gastronômico.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -577,13 +620,16 @@
     <footer class="footer">
         <div class="footer-container container">
             <div class="footer-brand">
-                <div class="logo">Sou <span>Ibiapaba</span></div>
+
+                <div class="logo"><div class="logo-img"> <a href=""><img src="../img/icone-logo.png" alt="logo"></div></a>
+            
+            <span>Sou Ibiapaba</span></div>
             </div>
             <nav class="footer-nav">
-                <a href="../index.html">Inicio</a>
-                <a href="Hospedagem.html">Hospedagens</a>
-                <a href="Gastronomia.html">Gastronomia</a>
-                <a href="Contato.html">Contato</a>
+                <a href="Roteiros.html">Roteiros</a>
+                <a href="">Hospedagens</a>
+                <a href="">Gastronomia</a>
+                <a href="">Contato</a>
             </nav>
             <div class="footer-contact">
                 <span>(85) 99999-8888</span>
